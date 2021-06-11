@@ -21,7 +21,7 @@ Configuration:
 
   Loggers:
     logger:
-      - name: com.springbootlogger.log4j2
+      - name: com.mkyong
         level: debug
         additivity: false
         AppenderRef:
