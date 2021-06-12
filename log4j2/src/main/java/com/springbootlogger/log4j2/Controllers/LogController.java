@@ -1,7 +1,7 @@
 package com.springbootlogger.log4j2.Controllers;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LogController {
 
     String logMessage = "Logging output via Log4j2..";
-    Logger logger = LogManager.getLogger(LogController.class);
+    Logger logger = LoggerFactory.getLogger(LogController.class);
 
     @GetMapping("/log")
     public String log() {

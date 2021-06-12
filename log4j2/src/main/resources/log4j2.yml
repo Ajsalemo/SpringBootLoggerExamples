@@ -1,18 +1,18 @@
 Configuration:
-  status: debug
+  status: info
 
   appenders:
     Console:
       name: LogToConsole
       PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1}: %msg%n"
 
     RollingFile:
       - name: LogToRollingFile
         fileName: logs/app.log
         filePattern: "logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz"
         PatternLayout:
-          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1}: %msg%n"
         Policies:
           SizeBasedTriggeringPolicy:
             size: 10MB
@@ -21,8 +21,8 @@ Configuration:
 
   Loggers:
     logger:
-      - name: com.mkyong
-        level: debug
+      - name: com.springbootlogger.log4j2
+        level: info
         additivity: false
         AppenderRef:
           - ref: LogToConsole
