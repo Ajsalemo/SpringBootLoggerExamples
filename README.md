@@ -1,6 +1,6 @@
 # SpringBootLoggerExamples
 
-Examples of loggers not using Spring Boot's default logger Logback. This repro implements Log4j2 using a .yml configuration as well as Lombok using Log4j2 through Slf4j with a .xml configuration - as well as Log4j directly.
+Examples of loggers not using Spring Boot's default logger Logback. This repo implements Log4j2 using a .yml configuration as well as Lombok using Log4j2 through Slf4j with a .xml configuration - as well as Log4j directly.
 
 <br>
 <br>
