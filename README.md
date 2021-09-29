@@ -1,6 +1,6 @@
 # SpringBootLoggerExamples
 
-Examples of loggers not using Spring Boot's default logger Logback. This repo implements Log4j2 using a .yml configuration as well as Lombok using Log4j2 through Slf4j with a .xml configuration - as well as Log4j directly.
+Examples of customizable loggers with Spring Boot. This repo implements Log4j2, Logback as well as Lombok using Log4j2/Slf4j annotations.
 
 <br>
 <br>
@@ -17,3 +17,9 @@ Examples of loggers not using Spring Boot's default logger Logback. This repo im
   - `/`: Root path
   - `/log4j`: Outputs logging directly from Log4j2 using the `@Log4j2` Lombok Annotation to a rolling file and console output.
   - `/slf4j`: Outputs logging with Slf4j using the `@Slf4j` Lombok Annotation to a rolling file and console output.
+
+`/logback`
+- Implements `logback`'s configuration through .yml format under `/src/main/resources`.
+- Paths
+  - `/`: Root path
+  - `/logback`: Generates logging through logback - this writes to both a rolling file and console output.
