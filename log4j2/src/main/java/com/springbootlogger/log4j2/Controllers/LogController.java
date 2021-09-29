@@ -11,7 +11,7 @@ public class LogController {
     String logMessage = "Logging output via Log4j2..";
     Logger logger = LoggerFactory.getLogger(LogController.class);
 
-    @GetMapping("/log")
+    @GetMapping("/log4j2")
     public String log() {
         logger.trace("Log4j2 - A TRACE level message");
         logger.debug("Log4j2 - A DEBUG level message");

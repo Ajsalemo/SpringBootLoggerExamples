@@ -10,7 +10,7 @@ import lombok.extern.log4j.Log4j2;
 public class Log4jController {
     String message = "Logging output via Log4j2 with Lombok..";
 
-    @GetMapping("/log4j")
+    @GetMapping("/log4j-lombok")
     public String log4j() {
         log.trace("A TRACE Message");
         log.debug("A DEBUG Message");
